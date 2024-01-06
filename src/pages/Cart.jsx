@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import CartItem from "../components/CartItem";
-//why using navlink is a more good practice than using link
 
-const Cart = () => { //cart ke andar items slice ke andar initialState main jo empty array hai uske dvara track kr rhe hai
+
+const Cart = () => {
 
   const {cart} = useSelector((state)=> state);
   const [totalAmount , setTotalAmount] = useState(0);
